@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<venta>
+<factura>
+<codigo> 45G675H987K </codigo>
+<fecha> 12/1/21 </fecha>
+<datos DNI="46777898C" nombre="Ramón" apellido="Martínez" direccion="Candido Castillo N5" telefono="978555789"></datos>
+<coche marca=" Seat" modelo="Leon"></coche>
+</factura>
+</venta>

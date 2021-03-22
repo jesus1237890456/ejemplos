@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<productos>
+<articulo>
+<nombre cantidad="30"> lapiz </nombre>
+<marca color="negro"> A </marca>
+</articulo>
+<articulo>
+<nombre cantidad="20"> bloc </nombre>
+<marca color="azules"> B </marca>
+</articulo>
+<articulo>
+<nombre cantidad="40"> bolígrafos </nombre>
+<marca color="verde"> C </marca>
+</articulo>
+<articulo>
+<nombre cantidad="20"> bolígrafos </nombre>
+<marca color="negro"> D </marca>
+</articulo>
+</productos>

@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+<title>Formularios</title>
+<meta charset="iso-8859-2" />
+</head>
+<body>
+<h1 style="text-align:center;">Formulario Génerico de HTML5</h1>
+<form action="procesaformulario.php" method="post" enctype="multipart/form-data" name="form1">
+  <h3>NUEVOS CAMPOS DE ENTRADA (INPUT):</h3>
+  <p>Color (type="color"): <input type="color" name="colorfavorito"/>
+  </p>
+  <p>Fecha (type=&quot;date):
+    <input type="date" name="fecha" id="fecha"/>
+  </p>
+  <p>Fecha Hora (type=&quot;datetime&quot;):
+    <input type="datetime" name="fechahora" id="fechahora">
+  </p>
+  <p>Fecha Hora local (type=&quot;datetime-local&quot;):
+    <input type="datetime-local" name="fechahora2" id="fechahora2">
+  </p>
+  <p>Hora (type=&quot;time&quot;):<input type="time" name="hora"></p>
+  <p>Mes (type=&quot;month&quot;): <input type="month" name="mes"></p>
+  <p>Semana (type=&quot;week&quot;):
+    <input type="week" name="semana">
+  </p>
+  <p>Correo electr&oacute;nico (type=&quot;email&quot;): <input type="email" name="correo">
+  </p>
+  <p>N&uacute;mero (type=&quot;number&quot;):<input type="number" name="nota" min="1" max="10"> 
+  admite m&iacute;nimo, m&aacute;ximo, salto, valor por defecto.</p>
+  <p>Rango (type=&quot;range&quot;): <input type="range" name="rango" min="1" max="10">
+   admite m&iacute;nimo, m&aacute;ximo, salto, valor por defecto. </p>
+  <p>B&uacute;squeda (type=&quot;search&quot;):  <input type="search" name="busqueda"> </p>
+  <p>Tel&eacute;fono (type=&quot;tel&quot;):<input type="tel" name="telefono"></p>
+  <p>Direcci&oacute;n web (type=&quot;url&quot;): 
+    <input type="url" name="URL" id="URL">
+  </p>
+  <h3>NUEVOS COMPONENTES PARA FORMULARIOS:</h3>
+  <p>
+  <i>
+  <b>Entrada a partir de datos de una lista, para este control utilizados dos elementos input list=&quot;
+ relacion&quot; para recopilar el dato y datalist para indicar los posibles valores:
+ </i>
+ </b> 
+ <br>
+ Pagina web (input name="web" list="webs" datalist id="webs") : <input name="web" list="webs"><datalist id="webs">
+ <option value="http://www.suarezdefigueroa.es/" label="I.E.S. Suarez de Figueroa">
+ <option value="http://www.educacion.es/" label="Ministerio de educacion">
+</datalist></p>
+  <p><i><b>Encriptaci&oacute;n (permite encriptar datos, genera 2 claves: mantiene la clave privada en el equipo y envia la clave p&uacute;blica)</i></b></p>
+  <p>Usuario (input type="text" name="usuario" id="usuario"): 
+    <input type="text" name="usuario" id="usuario">
+    Encriptaci&oacute;n (keygen name="seguridad"): 
+    <keygen name="seguridad">
+  </p>
+  <p><i><b>Salida de datos (para mostrar salidas interactivas relacionadas con otros controles)</i></b></p>
+  <p>
+<input type="number" name="a" value="0" onChange="rdo.value=parseInt(a.value)*parseInt(b.value)">*
+<input type="number" name="b" value="0" onChange="rdo.value=parseInt(a.value)*parseInt(b.value)">=
+<output name="rdo" for="a b"></output>
+</p>
+  <h3>DATOS CL&aacute;SICOS (LOS DE HTML NORMAL):</h3>
+  <p>Texto (type=&quot;text&quot;):
+    <input type="text" name="texto" id="texto">
+  </p>
+  <p>Oculto (type=&quot;hidden&quot;):  
+    <input name="oculto" type="hidden" id="oculto" value="oculto">
+  </p>
+  <p>Clave (type=&quot;password&quot;):
+    <input type="password" name="clave" id="clave">
+  </p>
+  <p>Imagen (type=&quot;image&quot;):
+    <input name="imagen" type="image" id="imagen" src="../imagenes/img_html5_html5.gif" alt="Imagen">
+  </p>
+  <p>Casilla de verificaci&oacute;n (type=&quot;checkbox&quot;): 
+    <input name="casilla" type="checkbox" id="casilla" value="casilla" checked>
+  </p>
+  <p>Radio (type=&quot;radio&quot;):
+    <input type="radio" name="radio" id="radio" value="1">
+1
+<input type="radio" name="radio" id="radio2" value="2">
+2
+<input type="radio" name="radio" id="radio3" value="3"> 
+3 </p>
+  <p>Archivo (type=&quot;file&quot;)  
+    <input type="file" name="archivo" id="archivo">
+  </p>
+  <p>Bot&oacute;n (type=&quot;button&quot;): 
+    <input type="button" name="boton" id="boton" value="Bot&oacute;n">
+  </p>
+  <p>Borrado (type=&quot;reset&quot;): 
+    <input type="reset" name="borrado" id="borrado" value="Restablecer">
+  </p>
+  <p>Envio (type=&quot;submit&quot;):
+    <input type="submit" name="envio" id="envio" value="Enviar">
+  </p>
+</form>
+<p>&nbsp;</p>
+</body>
+</html>
